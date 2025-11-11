@@ -1,0 +1,74 @@
+#header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+  transition: background-color 0.3s ease, backdrop-filter 0.3s ease;
+  background-color: transparent;
+  backdrop-filter: none;
+}
+
+#header.scrolled {
+  background-color: rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(20px);
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 50px;
+}
+
+.header img {
+  height: 80px;
+}
+
+.header-menu {
+  display: flex;
+  gap: 43px;
+  align-items: center;
+}
+
+.header-menu a {
+  font-family: "Open Sans";
+  font-size: 18px;
+  color: #ffffff;
+  position: relative;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.header-menu a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -6px;
+  height: 2px;
+  width: 0;
+  background: linear-gradient(90deg, #728cd5 0%, #3e5bac 50%, #243b55 100%);
+  transition: width 0.3s ease, background 0.3s ease;
+}
+
+.header-menu a:hover::after {
+  width: 100%;
+  background: linear-gradient(90deg, #728cd5 0%, #3e5bac 50%, #243b55 100%);
+}
+
+.header-menu a:hover {
+  background: linear-gradient(90deg, #728cd5 0%, #3e5bac 50%, #243b55 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.header-menu a.ativo {
+  background: linear-gradient(90deg, #728cd5 0%, #3e5bac 50%, #243b55 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.header-menu a.ativo::after {
+  width: 100%;
+  background: linear-gradient(90deg, #728cd5 0%, #3e5bac 50%, #243b55 100%);
+}

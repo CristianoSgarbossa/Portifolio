@@ -1,0 +1,216 @@
+#about {
+  padding-top: 150px;
+}
+
+#about .about {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: start;
+  gap: 0px 50px;
+}
+
+.about-start {
+  text-align: center;
+}
+
+.about-start h2 {
+  font-size: 40px;
+  font-family: "Montserrat";
+  line-height: 1;
+  padding-bottom: 10px;
+  color: #3e5bac;
+}
+
+.about-start p {
+  color: #9b9b9b9b;
+  font-family: "Open Sans";
+  font-size: 14px;
+  margin-bottom: 50px;
+}
+
+.about-title h3 {
+  font-size: 40px;
+  font-family: "Montserrat";
+  line-height: 1;
+  color: #3e5bac;
+}
+
+.about-title span {
+  font-size: 30px;
+  font-family: "Montserrat";
+  line-height: 1;
+  color: #ffffff;
+}
+
+.about-title p {
+  color: #9b9b9b9b;
+  font-family: "Open Sans";
+  font-size: 14px;
+  margin-bottom: 40px;
+  margin-top: 14px;
+  width: 70ch;
+}
+
+.about-curriculo {
+  display: flex;
+  gap: 20px;
+}
+
+.about-curriculo a {
+  color: #ffffff;
+  font-size: 16px;
+  font-family: "Montserrat";
+  border: 2px solid #243b55;
+  border-radius: 5px;
+  padding: 10px 15px;
+  font-weight: bold;
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  text-decoration: none;
+  transition: all 0.5s ease;
+}
+
+.about-curriculo a::before {
+  content: "";
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  background: url("../../img/Code-01.svg") no-repeat center;
+  background-size: contain;
+}
+
+.about-curriculo a.diferente {
+  background: radial-gradient(circle at top, #728cd5 0%, #3e5bac 100%);
+  border: none;
+}
+
+.about-curriculo a.diferente::before {
+  background: url("../../img/Document.svg") no-repeat center;
+  background-size: contain;
+}
+
+.about-curriculo a:hover {
+  transform: scale(1.1);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.about-curriculo a.diferente:hover {
+  transform: scale(1.1);
+}
+
+.about-image {
+  display: flex;
+  justify-content: flex-end;
+  align-items: start;
+  position: relative;
+  margin-bottom: 50px;
+}
+
+.about-image img {
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
+  object-fit: cover;
+  background: radial-gradient(circle at center, #3e5bac 0%, #090a0f 100%);
+  border: 2px solid rgba(62, 91, 172, 0.7);
+  box-shadow: 0 0 20px 5px rgba(36, 59, 85, 100);
+  transition: transform 0.5s ease, box-shadow 0.5s ease;
+}
+
+.about-image img:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 2px 1px rgba(114, 140, 213, 0.8);
+}
+
+.about-cards {
+  display: flex;
+  justify-content: center;
+  align-items: stretch;
+  gap: 21px;
+  flex-wrap: wrap;
+}
+
+.card {
+  position: relative;
+  background: rgba(0, 0, 0, 0.25);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(62, 91, 172, 0.3);
+  border-radius: 10px;
+  padding: 25px;
+  width: 280px;
+  height: 167px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  box-shadow: 0 0 15px rgba(36, 59, 85, 0.3);
+  transition: all 0.4s ease;
+}
+
+.card-icon {
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  background: rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(10px);
+}
+
+.card-icon img {
+  width: 20px;
+  height: 20px;
+  object-fit: contain;
+}
+
+.card-content h3 {
+  color: #ffffff;
+  font-size: 14px;
+  font-family: "Montserrat";
+  text-transform: uppercase;
+  margin-bottom: 4px;
+}
+
+.card-content p {
+  color: rgba(255, 255, 255, 0.6);
+  font-size: 12px;
+  font-family: "Open Sans";
+}
+
+.card-number {
+  position: absolute;
+  top: 35px;
+  right: 15px;
+  color: #ffffff;
+  font-size: 20px;
+  font-weight: bold;
+  font-family: "Montserrat";
+}
+
+.card-arrow {
+  position: absolute;
+  bottom: 15px;
+  right: 15px;
+}
+
+.card-arrow img {
+  width: 25px;
+  height: 25px;
+  opacity: 0.8;
+}
+
+.card-arrow a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  transition: 0.3s ease;
+}
+
+.card-arrow a:hover {
+  transform: translateY(-3px);
+}

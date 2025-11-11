@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portifolio - CRS</title>
+  <link rel="stylesheet" href="./css/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <canvas id="stars"></canvas>
+  <header id="header">
+    <div class="container">
+      <nav class="header">
+        <img src="./img/Frame 33.png" alt="CRS">
+        <ul class="header-menu">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section id="home">
+      <div class="container home">
+        <div class="home-title">
+          <h1>Frontend <br><span>Developer</span></h1>
+          <h2>Software Engineering Student</h2>
+          <p>
+            Creating innovative, functional, and easy-to-use websites for digital
+            solutions that help businesses grow, connect with people, and stand out
+            in the online world.
+          </p>
+
+          <div class="home-lenguage">
+            <span>Html</span>
+            <span>Css</span>
+            <span>JavaScript</span>
+          </div>
+
+          <div class="home-button">
+            <a href="#projects">
+              Project <img src="./img/Arrow-up.svg" alt="">
+            </a>
+            <a href="#contact">
+              Contact <img src="./img/envelope.svg" alt="">
+            </a>
+          </div>
+
+          <div class="home-link">
+            <a href="">
+              <img src="./img/git.svg" alt="">
+            </a>
+            <a href="">
+              <img src="./img/LinkDin.svg" alt="">
+            </a>
+          </div>
+        </div>
+
+        <div class="home-image">
+          <img src="./img/Img.png" alt="Developer Illustration">
+        </div>
+      </div>
+    </section>
+
+
+    <section id="about">
+      <div class="about-start">
+        <h2>About Me</h2>
+        <p>Transforming ideas into digital experecineces</p>
+      </div>
+
+      <div class="container about">
+        <div class="about-title">
+          <h3>Hello. I'am <br><span>Cristiano Sgarbossa</span></h3>
+          <p>
+            A 20-year-old web page creator from Brazil, currently studying Software Engineering. Passionate about building modern, functional, and visually appealing websites that deliver great user experiences and real results.
+          </p>
+
+          <div class="about-curriculo">
+            <a class="diferente" href="">Dowload CV</a>
+            <a href="">View Projects</a>
+          </div>
+        </div>
+
+        <div class="about-image">
+          <img src="./img/eu.jpeg" alt="Developer Illustration">
+        </div>
+
+      </div>
+
+      <div class="about-cards container">
+        <div class="card">
+          <div class="card-icon">
+            <img src="./img/cod.svg" alt="Projects Icon">
+          </div>
+
+          <div class="card-content">
+            <h3>Total Projects</h3>
+            <p>Innovative web solutions crafted</p>
+          </div>
+
+          <span class="card-number">10</span>
+          <div class="card-arrow">
+            <a href="#projects" target="_blank">
+              <img src="./img/Arrow-up.svg" alt="Arrow Icon">
+            </a>
+          </div>
+
+        </div>
+
+        <div class="card">
+          <div class="card-icon">
+            <img src="./img/Certificates.svg" alt="Certificates Icon">
+          </div>
+
+          <div class="card-content">
+            <h3>Certificates</h3>
+            <p>Professional skills validated</p>
+          </div>
+
+          <span class="card-number">10</span>
+          <div class="card-arrow">
+            <a href="#projects" target="_blank">
+              <img src="./img/Arrow-up.svg" alt="Arrow Icon">
+            </a>
+          </div>
+
+        </div>
+
+        <div class="card">
+          <div class="card-icon">
+            <img src="./img/Experience.svg" alt="Experience Icon">
+          </div>
+
+          <div class="card-content">
+            <h3>Years of Experience</h3>
+            <p>Continuous learning journey</p>
+          </div>
+
+          <span class="card-number">10</span>
+          <div class="card-arrow">
+            <a href="#projects" target="_blank">
+              <img src="./img/Arrow-up.svg" alt="Arrow Icon">
+            </a>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <section class="portfolio-section container">
+      <h1 class="portfolio-title">Portfolio Showcase</h1>
+
+      <div class="tabs">
+        <button class="tab active" data-tab="projects">
+          <img src="./img/cod.svg" alt="Projects Icon">
+          <span>Projects</span>
+        </button>
+        <button class="tab" data-tab="certificates">
+          <img src="./img/Certificates.svg" alt="Certificates Icon">
+          <span>Certificates</span>
+        </button>
+        <button class="tab" data-tab="techstack">
+          <img src="./img/tech.svg" alt="Tech Stack Icon">
+          <span>Tech Stack</span>
+        </button>
+      </div>
+
+      <div class="content">
+        <!-- Projects -->
+        <div class="tab-content active" id="projects">
+          <div class="grid">
+            <div class="card-port">
+              <img src="./img/Rectangle 13.png" alt="Project">
+              <h3>Portfolio</h3>
+              <p>A modern and responsive portfolio built with HTML, CSS, and JavaScript, showcasing creative web projects and professional skills.</p>
+              <div class="card-link">
+                <a class="link-df" href="">Live Demo</a>
+                <a href="">Details</a>
+              </div>
+            </div>
+            <div class="card-port">
+              <img src="./img/Rectangle 13.png" alt="Project">
+              <h3>Portfolio</h3>
+              <p>A modern and responsive portfolio built with HTML, CSS, and JavaScript, showcasing creative web projects and professional skills.</p>
+              <div class="card-link">
+                <a class="link-df" href="">Live Demo</a>
+                <a href="">Details</a>
+              </div>
+            </div>
+
+            <div class="card-port">
+              <img src="./img/Rectangle 13.png" alt="Project">
+              <h3>Portfolio</h3>
+              <p>A modern and responsive portfolio built with HTML, CSS, and JavaScript, showcasing creative web projects and professional skills.</p>
+              <div class="card-link">
+                <a class="link-df" href="">Live Demo</a>
+                <a href="">Details</a>
+              </div>
+            </div>
+
+            <div class="card-port">
+              <img src="./img/Rectangle 13.png" alt="Project">
+              <h3>Portfolio</h3>
+              <p>A modern and responsive portfolio built with HTML, CSS, and JavaScript, showcasing creative web projects and professional skills.</p>
+              <div class="card-link">
+                <a class="link-df" href="">Live Demo</a>
+                <a href="">Details</a>
+              </div>
+            </div>
+
+            <div class="card-port">
+              <img src="./img/Rectangle 13.png" alt="Project">
+              <h3>Portfolio</h3>
+              <p>A modern and responsive portfolio built with HTML, CSS, and JavaScript, showcasing creative web projects and professional skills.</p>
+              <div class="card-link">
+                <a class="link-df" href="">Live Demo</a>
+                <a href="">Details</a>
+              </div>
+            </div>
+
+            <div class="card-port">
+              <img src="./img/Rectangle 13.png" alt="Project">
+              <h3>Portfolio</h3>
+              <p>A modern and responsive portfolio built with HTML, CSS, and JavaScript, showcasing creative web projects and professional skills.</p>
+              <div class="card-link">
+                <a class="link-df" href="">Live Demo</a>
+                <a href="">Details</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+
+        <!-- Certificates -->
+        <div class="tab-content" id="certificates">
+          <div class="grid-cert">
+            <div class="card-cert">
+              <img src="./img/Certificado.png" alt="Certificado">
+            </div>
+            <div class="card-cert">
+              <img src="./img/Certificado.png" alt="Certificado">
+            </div>
+            <div class="card-cert">
+              <img src="./img/Certificado.png" alt="Certificado">
+            </div>
+            <div class="card-cert">
+              <img src="./img/Certificado.png" alt="Certificado">
+            </div>
+            <div class="card-cert">
+              <img src="./img/Certificado.png" alt="Certificado">
+            </div>
+            <div class="card-cert">
+              <img src="./img/Certificado.png" alt="Certificado">
+            </div>
+          </div>
+        </div>
+
+        <!-- Tech Stack -->
+        <div class="tab-content" id="techstack">
+          <div class="tech-grid ">
+            <div class="tech">
+              <img src="./img/icones/HTML.png" alt="HTML">
+              <p>HTML</p>
+            </div>
+            <div class="tech">
+              <img src="./img/icones/CSS.png" alt="CSS">
+              <p>CSS</p>
+            </div>
+            <div class="tech">
+              <img src="./img/icones/JS.png" alt="JS">
+              <p>JAVASCRIPT</p>
+            </div>
+            <div class="tech">
+              <img src="./img/icones/REACT.png" alt="React">
+              <p>REACT</p>
+            </div>
+            <div class="tech">
+              <img src="./img/icones/TAILWIND.png" alt="TAILWIND">
+              <p>TAILWIND</p>
+            </div>
+            <div class="tech">
+              <img src="./img/icones/VUE.png" alt="VUE">
+              <p>VUE</p>
+            </div>
+            <div class="tech">
+              <img src="./img/icones/REDUX.png" alt="REDUX">
+              <p>REDUX</p>
+            </div>
+            <div class="tech">
+              <img src="./img/icones/NEXT.png" alt="NEXT">
+              <p>NEXT</p>
+            </div>
+            <div class="tech">
+              <img src="./img/icones/TYPESCRIPT.png" alt="TYPESCRIPT">
+              <p>TYPESCRIPT</p>
+            </div>
+            <div class="tech">
+              <img src="./img/icones/JQUERY.png" alt="JQUERY">
+              <p>JQUERY</p>
+            </div>
+            <div class="tech">
+              <img src="./img/icones/SASS.png" alt="SASS">
+              <p>SASS</p>
+            </div>
+            <div class="tech">
+              <img src="./img/icones/BOOTSTRAP.png" alt="BOOTSTRAP">
+              <p>BOOTSTRAP</p>
+            </div>
+            <div class="tech">
+              <img src="./img/icones/SQLITE.png" alt="SQLITE">
+              <p>SQLITE</p>
+            </div>
+            <div class="tech">
+              <img src="./img/icones/NODEJS.png" alt="Node.js">
+              <p>NODE.JS</p>
+            </div>
+            <div class="tech">
+              <img src="./img/icones/C.png" alt="C">
+              <p>C</p>
+            </div>
+            <div class="tech">
+              <img src="./img/icones/GITHUB.png" alt="GITHUB">
+              <p>GITHUB</p>
+            </div>
+            <div class="tech">
+              <img src="./img/icones/NPM.png" alt="NPM">
+              <p>NPM</p>
+            </div>
+            <div class="tech">
+              <img src="./img/icones/GIT.png" alt="GIT">
+              <p>GIT</p>
+            </div>
+            <div class="tech">
+              <img src="./img/icones/FIGMA.png" alt="FIGMA">
+              <p>FIGMA</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+</body>
+
+<script src="script.js"></script>
+
+</html>

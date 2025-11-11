@@ -1,0 +1,10 @@
+@import "./tela-01/nav.css";
+@import "./tela-01/home.css";
+@import "./tela-01/about.css";
+@import "./tela-01/projects.css";
+@import "./tela-01/certificates.css";
+@import "./tela-01/tech.css";
+@import "./tela-01/contact.css";
+
+@import "./componetes/funcionais.css";
+@import "./componetes/canvas.css";
