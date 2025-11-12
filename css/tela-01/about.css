@@ -212,5 +212,5 @@
 }
 
 .card-arrow a:hover {
-  transform: translateY(-3px);
+  transform: translate(3px, -3px) scale(1.1);
 }

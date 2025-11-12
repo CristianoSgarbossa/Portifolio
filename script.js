@@ -45,6 +45,39 @@ tabs.forEach((tab) => {
   });
 });
 
+const techs = [
+  { img: "./img/icones/HTML.png", name: "HTML" },
+  { img: "./img/icones/CSS.png", name: "CSS" },
+  { img: "./img/icones/JS.png", name: "JAVASCRIPT" },
+  { img: "./img/icones/REACT.png", name: "REACT" },
+  { img: "./img/icones/TAILWIND.png", name: "TAILWIND" },
+  { img: "./img/icones/VUE.png", name: "VUE" },
+  { img: "./img/icones/REDUX.png", name: "REDUX" },
+  { img: "./img/icones/NEXT.png", name: "NEXT" },
+  { img: "./img/icones/TYPESCRIPT.png", name: "TYPESCRIPT" },
+  { img: "./img/icones/SQLITE.png", name: "SQLITE" },
+  { img: "./img/icones/NODEJS.png", name: "NODE.JS" },
+  { img: "./img/icones/C.png", name: "C" },
+  { img: "./img/icones/GITHUB.png", name: "GITHUB" },
+  { img: "./img/icones/NPM.png", name: "NPM" },
+  { img: "./img/icones/GIT.png", name: "GIT" },
+  { img: "./img/icones/FIGMA.png", name: "FIGMA" },
+];
+
+const techGrid = document.querySelector(".tech-grid");
+
+techs.forEach((tech) => {
+  const techDiv = document.createElement("div");
+  techDiv.classList.add("tech");
+
+  techDiv.innerHTML = `
+      <img src="${tech.img}" alt="${tech.name}">
+      <p>${tech.name}</p>
+    `;
+
+  techGrid.appendChild(techDiv);
+});
+
 // Estrelas
 const canvas = document.getElementById("stars");
 const ctx = canvas.getContext("2d");
